@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+
+    .salaryInput {
+      margin-left: 400px;
+    }
+
+    .salaryInput>input,
+    .Expense>input {
+      margin: 3px;
+      width: 230px;
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    .salaryInput>button,
+    .Expense>button {
+      margin: 3px;
+      font-size: 20px;
+      padding: 5px 10px 5px 10px;
+    }
+
+    .Expense {
+      border: 2px solid black;
+      padding: 20px;
+      margin: 0 auto 0 auto;
+      /* margin-left: 305px; */
+      width: fit-content
+    }
+
+    .Title,
+    .detailedView div {
+      display: flex;
+      flex-direction: row;
+      margin-left: 300px;
+    }
+
+    .Title>h2,
+    .detailedView div h3 {
+      margin: 10px 110px 10px 110px;
+    }
+
+    table {
+      margin: 10px auto 0 auto;
+      width: 600px;
+      border-collapse: collapse;
+
+    }
+
+    table thead tr td,
+    table tbody tr td {
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    table thead tr td {
+      font-weight: bold;
+    }
+
+    .detailedView div {
+      margin-left: 300px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="jquery.js"></script> -->
+</head>
+
+<body>
+  <h1>Salary And Expenses</h1>
+  <div class="salaryInput">
+    <input type="number" class="Salary" placeholder="Salary" />
+    <input class="Month" type="text" placeholder="Month" />
+    <button class="addbutton">Add</button>
+  </div>
+
+  <div class="Title">
+  </div>
+
+  <!-- Add Expense -->
+  <div class="Expense">
+    <input class="Cost" type="number" placeholder="Expense Amount"/>
+    <input class="For" type="text" placeholder="Expense For"/>
+    <button class="addExpenseButton">Add Expense</button>
+  </div>
+
+  <div class="detailedView">
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
